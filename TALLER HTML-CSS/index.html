@@ -4,41 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Title</title>
+    <title>FC Barcelona</title>
+    <style>
+      body {
+        background-color: #cfcedf;
+      }
+      .rounded-img {
+        border: 3px solid #0d2d57;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 42%;
+      }
+      .info-rectangle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .info-content {
+        border: 3px solid #0d2d57;
+        padding: 35px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+      }
+      .left-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .custom-table {
+        border: 3px solid #092846;
+        background-color: #cfcedf;
+      }
+      .custom-table th, .custom-table td {
+        background-color: inherit;
+        border: none;
+        text-align: center;
+      }
+
+      .custom-table thead th {
+        border-bottom: 3px solid #092848;
+      }
+      .custom-table tbody tr {
+        border: none;
+      }
+      .custom-table tbody td:first-child {
+        border-right: 3px solid #0a2a4a;
+      }
+      .image-section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .image-container {
+        text-align: center;
+      }
+      .image-container img {
+        border-radius: 5%;
+        width: 230px;
+        height: 300px;
+        object-fit: cover;
+        border: 3px solid #092846;
+      }
+      
+    </style>
   </head>
 
   <body>
-    <h1>Felipe Sales</h1>
-
-    <h3>Lista</h3>
-    <ol>
-        <li> Elemento 1 </li>
-        <li> Elemento 2 </li>
-        <li> Elemento 3 </li>
-    </ol>
-
-<div class = container-fluid> 
-    <h3>Tabla</h3>
-    <table class = table>
-        <tr>
-            <th>Titulo 1  </th>
-            <th>Titulo 2  </th>
-            <th>Titulo 3  </th>
-        </tr>
-        <tr>
-            <td>Elem 1-1 </td>
-            <td>Elem 1-2 </td>
-            <td>Elem 1-3 </td>
-        </tr>
-        <tr>
-            <td>Elem 2-1 </td>
-            <td>Elem 2-2 </td>
-            <td>Elem 2-3 </td>
-        </tr>
-    </table>
-
-    <img src="https://i.pinimg.com/236x/b1/0d/a6/b10da6ff2fd81e5f96e8c44058a84ece.jpg" alt="Gato">
-</div>
-
+    <div class="info-rectangle">
+      <div class="info-content">
+        <div class="left-section">
+          <div class="text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhvwYZm9czq4pkbqLyA4hb3nq72dplE72Xk7nJ7cMRvqfQdR7qOoPnPOsQ6vd-ZZ_mmM&usqp=CAU" alt="Escudo FC Barcelona" class="rounded-img">
+          </div>
+          <div><br></div>
+          <div>
+            <h4 class = "text-center">• PALMARÉS •</h4>
+            <table class="table table-bordered custom-table">
+              <thead>
+                <tr>
+                  <th>Títulos</th>
+                  <th>Victorias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Champions League</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                    <td>Liga Española</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Copa del rey</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>Supercopa de España</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Supercopa Europea</td>
+                    <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class = "text-center">
+          <h1>• FUTBOL CLUB BARCELONA •</h1>
+          <p>El F.C. Barcelona fue fundado como club de fútbol el 29 de noviembre de 1899.
+             Sumando torneos a nivel nacional domina el palmarés con 77 campeonatos.
+             Y a nivel internacional ostenta 22, situado en el segundo puesto europeo.
+             Los colores distintivos del F. C. Barcelona son el azul y el granate, de donde procede el sobrenombre de «Azulgrana» 
+             con el que se conoce a los jugadores y aficionados del club.<br>
+          </p>
+          <h5 class = "text-center">EQUIPACIONES - TEMPORADA 2024/25</h5>
+          <div class="image-section">
+            <div class="image-container">
+              <h5>Titular</h5>
+              <img src="https://havencraft.co.ke/wp-content/uploads/2024/08/FCB-2024-25-Home-Shirt-Front-700x700-1.jpg" alt="Equipación 1">
+            </div>
+            <div class="image-container">
+              <h5>Visitante</h5>
+              <img src="https://jerseyloco.com/wp-content/uploads/2024/09/2324-Kids-Manchester-City-Home-Kit-6.jpg" alt="Equipación 2">
+            </div>
+            <div class="image-container">
+              <h5>Alternativa</h5>
+              <img src="https://premiumsoccer.com/cdn/shop/files/AURORA_FQ2022-702_PHSFH001-2000_conv_3.jpg?v=1726939471&width=416" alt="Equipación 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
